@@ -5,16 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2d1bf4e-0040-4efa-ad77-126308255ef0" name="Changes" comment="Start project + base classes">
-      <change afterPath="$PROJECT_DIR$/src/thirdVer/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thirdVer/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thirdVer/BookReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thirdVer/BookStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thirdVer/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thirdVer/Library.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thirdVer/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firstVer/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firstVer/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firstVer/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firstVer/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firstVer/BookReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firstVer/BookReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firstVer/BookStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firstVer/BookStore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/firstVer/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firstVer/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/secondVer/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/secondVer/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firstVer/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firstVer/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firstVer/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firstVer/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/secondVer/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/secondVer/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/secondVer/BookStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/secondVer/BookStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/secondVer/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/secondVer/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thirdVer/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thirdVer/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thirdVer/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thirdVer/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thirdVer/BookReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thirdVer/BookReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thirdVer/BookStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thirdVer/BookStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thirdVer/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thirdVer/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thirdVer/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thirdVer/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,13 +1,12 @@
 package thirdVer;
 
 
-import java.io.Externalizable;
-import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectOutput;
+import java.io.*;
 import java.util.ArrayList;
 
 public class BookReader extends Human implements Externalizable {
+    @Serial
+    private static final long serialVersionUID = 1L;
     private int registrationNumber;
     private transient ArrayList<Book> receivedBooks;
 
@@ -40,7 +39,10 @@ public class BookReader extends Human implements Externalizable {
         this.setName(name);
         this.setSurname(surname);
     }
-    public BookReader(){}
+
+    public BookReader() {
+    }
+
     @Override
     public String toString() {
         return "\nBookReader: \n" +
@@ -56,8 +58,7 @@ public class BookReader extends Human implements Externalizable {
         out.writeObject(getName());
         out.writeObject(getSurname());
         out.writeInt(getReceivedBooks().size());
-        for(Externalizable recBooks: receivedBooks)
-        {
+        for (Externalizable recBooks : receivedBooks) {
             recBooks.writeExternal(out);
         }
     }

@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class Library implements Externalizable {
+    @Serial
     private static final long serialVersionUID = 1L;
     private String name;
     private ArrayList<BookStore> bookStores;
@@ -38,7 +39,9 @@ public class Library implements Externalizable {
         this.bookStores = bookStores;
         this.bookReaders = bookReaders;
     }
-    public Library(){}
+
+    public Library() {
+    }
 
     @Override
     public String toString() {
@@ -52,11 +55,11 @@ public class Library implements Externalizable {
     public void writeExternal(ObjectOutput out) throws IOException {
         out.writeObject(getName());
         out.writeInt(bookStores.size());
-        for(Externalizable bookstore: bookStores){
+        for (Externalizable bookstore : bookStores) {
             bookstore.writeExternal(out);
         }
         out.writeInt(bookReaders.size());
-        for(Externalizable bookReader: bookReaders){
+        for (Externalizable bookReader : bookReaders) {
             bookReader.writeExternal(out);
         }
     }

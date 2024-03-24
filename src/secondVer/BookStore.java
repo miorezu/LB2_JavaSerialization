@@ -37,14 +37,13 @@ public class BookStore implements Serializable {
                 " books: " + books;
     }
 
-    // Ручне керування серіалізацією: серіалізований клас "Книжкове сховище"
     @Serial
     private void writeObject(ObjectOutputStream out) throws IOException {
-        out.defaultWriteObject(); // все, що можна зберігаємо за замовчуванням
-        out.writeInt(books.size()); // вручну зберігаємо все що треба
-        for (Book book : books) { // для кожної книги зберігаємо все
+        out.defaultWriteObject();
+        out.writeInt(books.size());
+        for (Book book : books) {
             out.writeObject(book.getTitle());
-            out.writeInt(book.getAuthors().size());// та список авторів зберігаємо весь
+            out.writeInt(book.getAuthors().size());
             for (Author a : book.getAuthors()) {
                 out.writeObject(a.getName());
                 out.writeObject(a.getSurname());
@@ -58,16 +57,14 @@ public class BookStore implements Serializable {
     @Serial
     private void readObject(ObjectInputStream in) throws IOException,
             ClassNotFoundException {
-        in.defaultReadObject(); // все, що можна зчитуємо за замовчуванням
-        books = new ArrayList<Book>(); // все інше конструюємо та
-        // зчитуємо вручну
+        in.defaultReadObject();
+        books = new ArrayList<Book>();
         int size = in.readInt();
-        for (int i = 0; i < size; i++) { // відновлюємо книгу
+        for (int i = 0; i < size; i++) {
             String title = (String) in.readObject();
-            int authorSize = in.readInt(); // зчитуємо розмір списку авторів
+            int authorSize = in.readInt();
             ArrayList<Author> authors = new ArrayList<>();
-
-            for (int j = 0; j < authorSize; j++) { // відновлюємо авторів
+            for (int j = 0; j < authorSize; j++) {
                 String name = (String) in.readObject();
                 String surname = (String) in.readObject();
                 String country = (String) in.readObject();

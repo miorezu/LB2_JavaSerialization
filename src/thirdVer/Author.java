@@ -1,11 +1,9 @@
 package thirdVer;
 
-import java.io.Externalizable;
-import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectOutput;
+import java.io.*;
 
 public class Author extends Human implements Externalizable {
+    @Serial
     private static final long serialVersionUID = 1L;
     private String country;
 
@@ -22,8 +20,10 @@ public class Author extends Human implements Externalizable {
         this.setSurname(surname);
         this.country = country;
     }
-    public Author()
-    {}
+
+    public Author() {
+    }
+
     @Override
     public String toString() {
         return "\nAuthor: \n" +

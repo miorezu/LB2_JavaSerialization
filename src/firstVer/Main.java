@@ -32,7 +32,6 @@ public class Main {
             os.writeObject(obj);
             os.close();
         } catch (IOException e) {
-// TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
@@ -45,7 +44,6 @@ public class Main {
             obj = is.readObject();
             is.close();
         } catch (Exception e) {
-// TODO Auto-generated catch block
             e.printStackTrace();
         }
         return obj;

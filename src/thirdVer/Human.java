@@ -1,6 +1,5 @@
 package thirdVer;
 
-
 public abstract class Human {
     private String name;
     private String surname;

@@ -1,12 +1,11 @@
 package thirdVer;
 
-import java.io.Externalizable;
-import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectOutput;
+import java.io.*;
 import java.util.ArrayList;
 
 public class Book implements Externalizable {
+    @Serial
+    private static final long serialVersionUID = 1L;
     private String title;
     private transient ArrayList<Author> authors;
     private int year;
@@ -56,7 +55,9 @@ public class Book implements Externalizable {
         this.year = year;
         this.publicationNumber = publicationNumber;
     }
-    public Book(){}
+
+    public Book() {
+    }
 
     @Override
     public String toString() {
@@ -71,8 +72,7 @@ public class Book implements Externalizable {
     public void writeExternal(ObjectOutput out) throws IOException {
         out.writeObject(getTitle());
         out.writeInt(authors.size());
-        for(Externalizable author: authors)
-        {
+        for (Externalizable author : authors) {
             author.writeExternal(out);
         }
         out.writeInt(getYear());
@@ -84,8 +84,7 @@ public class Book implements Externalizable {
         setTitle((String) in.readObject());
         int authorSize = in.readInt();
         authors = new ArrayList<>();
-        for(int i = 0; i < authorSize; i++)
-        {
+        for (int i = 0; i < authorSize; i++) {
             Author aut = new Author();
             aut.readExternal(in);
             authors.add(aut);

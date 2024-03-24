@@ -29,31 +29,34 @@ public class BookStore implements Externalizable {
         this.nameTopic = nameTopic;
         this.books = books;
     }
-    public BookStore(){}
+
+    public BookStore() {
+    }
+
     @Override
     public String toString() {
         return "\nBookStore: \n" +
                 " name of topic: " + nameTopic + "\n" +
                 " books: " + books;
     }
+
     @Override
     public void writeExternal(ObjectOutput out) throws IOException {
-        // TODO Auto-generated method stub
-        out.writeObject(getNameTopic()); // Зберігаємо ім'я сховища
-        out.writeInt(books.size()); // Записуємо кількість книг, що зберігаються
-        for (Externalizable ext : books) // Для всіх об'єктів з методом збереження
-            ext.writeExternal(out); // викликаємо цей метод для запису об'єкта
+        out.writeObject(getNameTopic());
+        out.writeInt(books.size());
+        for (Externalizable ext : books)
+            ext.writeExternal(out);
     }
 
     @Override
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
         // TODO Auto-generated method stub
-        nameTopic = (String) in.readObject(); // Зчитуємо ім'я для авт. створеного об'єкта
+        nameTopic = (String) in.readObject();
         books = new ArrayList<>();
-        int count = in.readInt(); // Дізнаємось про кількість книг
-        for (int i = 0; i < count; i++) { // Зчитуємо всі збережені книги
-            Book ext = new Book(); // Створюємо нову книгу
-            ext.readExternal(in); // Зчитуємо книгу за допомогою її методу читання
+        int count = in.readInt();
+        for (int i = 0; i < count; i++) {
+            Book ext = new Book();
+            ext.readExternal(in);
             books.add(ext);
         }
     }
