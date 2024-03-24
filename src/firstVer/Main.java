@@ -20,10 +20,12 @@ public class Main {
         bookReaders.add(new BookReader(65, "Lili", "Joy", null));
 
         Library centralLibrary = new Library("Central Library", bookStores, bookReaders);
-        System.out.println(centralLibrary);
+
+        serializeObject("serialization.ser", centralLibrary);
+        System.out.println(deSerializeObject("serialization.ser"));
     }
 
-    public static void serializeObject(String fileName, Object obj){
+    public static void serializeObject(String fileName, Object obj) {
         try {
             ObjectOutputStream os = new ObjectOutputStream(new
                     FileOutputStream(fileName));
@@ -34,7 +36,8 @@ public class Main {
             e.printStackTrace();
         }
     }
-    public static Object deSerializeObject(String fileName){
+
+    public static Object deSerializeObject(String fileName) {
         Object obj = null;
         try {
             ObjectInputStream is = new ObjectInputStream(new

@@ -34,11 +34,10 @@ public class BookReader extends Human implements Serializable {
 
     @Override
     public String toString() {
-        return "BookReader{" +
-                "registrationNumber=" + registrationNumber +
-                ", name = " + this.getName() +
-                ", surname = " + this.getSurname() +
-                ", receivedBooks =" + receivedBooks +
-                '}';
+        return "\nBookReader: \n" +
+                " registration number: " + registrationNumber + "\n" +
+                " name: " + this.getName() + "\n" +
+                " surname: " + this.getSurname() + "\n" +
+                " receivedBooks: " + receivedBooks;
     }
 }

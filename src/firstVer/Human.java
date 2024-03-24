@@ -25,9 +25,7 @@ public abstract class Human implements Serializable {
 
     @Override
     public String toString() {
-        return "Human{" +
-                "surname='" + surname + '\'' +
-                ", name='" + name + '\'' +
-                '}';
+        return "\n surname: " + surname + "\n" +
+                " name: " + name;
     }
 }

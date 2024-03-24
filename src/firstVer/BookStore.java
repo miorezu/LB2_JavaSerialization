@@ -31,9 +31,8 @@ public class BookStore implements Serializable {
 
     @Override
     public String toString() {
-        return "BookStore{" +
-                "nameTopic='" + nameTopic + '\'' +
-                ", books=" + books +
-                '}';
+        return "\nBookStore: \n" +
+                " name of topic: " + nameTopic + "\n" +
+                " books: " + books;
     }
 }

@@ -14,7 +14,7 @@ public class Author extends Human implements Serializable {
         this.country = country;
     }
 
-    Author(String name, String surname, String country){
+    Author(String name, String surname, String country) {
         this.setName(name);
         this.setSurname(surname);
         this.country = country;

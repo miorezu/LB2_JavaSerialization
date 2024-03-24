@@ -41,10 +41,9 @@ public class Library implements Serializable {
 
     @Override
     public String toString() {
-        return "Library{" +
-                "name='" + name + '\'' +
-                ", bookStores=" + bookStores +
-                ", bookReaders=" + bookReaders +
-                '}';
+        return "\nLibrary\n" +
+                " name of library: " + name + "\n" +
+                " book stores: " + bookStores + "\n" +
+                " book readers: " + bookReaders;
     }
 }

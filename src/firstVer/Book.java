@@ -57,11 +57,10 @@ public class Book implements Serializable {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "title='" + title + '\'' +
-                ", authors=" + authors +
-                ", year=" + year +
-                ", publicatioNumber=" + publicatioNumber +
-                '}';
+        return "\nBook: \n" +
+                " title: " + title + "\n" +
+                " authors: " + authors + "\n" +
+                " year: " + year + "\n" +
+                " publication number: " + publicatioNumber;
     }
 }
