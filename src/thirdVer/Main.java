@@ -1,4 +1,4 @@
-package secondVer;
+package thirdVer;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -21,10 +21,10 @@ public class Main {
         bookReaders.add(new BookReader(97, "Anzhelika", "Mazurenko", book2));
         bookReaders.add(new BookReader(65, "Lili", "Joy", book1));
 
-        Library centralLibrary = new Library("Central Library 2", bookStores, bookReaders);
+        Library centralLibrary = new Library("Central Library 3", bookStores, bookReaders);
 
-        serializeObject("serializationVer2.ser", centralLibrary);
-        System.out.println(deSerializeObject("serializationVer2.ser"));
+        serializeObject("serializationVer3.ser", centralLibrary);
+        System.out.println(deSerializeObject("serializationVer3.ser"));
     }
 
     public static void serializeObject(String fileName, Object obj) {

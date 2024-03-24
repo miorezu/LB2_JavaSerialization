@@ -19,7 +19,7 @@ public class Main {
         bookReaders.add(new BookReader(97, "Anzhelika", "Mazurenko", books));
         bookReaders.add(new BookReader(65, "Lili", "Joy", null));
 
-        Library centralLibrary = new Library("Central Library", bookStores, bookReaders);
+        Library centralLibrary = new Library("Central Library 1", bookStores, bookReaders);
 
         serializeObject("serializationVer1.ser", centralLibrary);
         System.out.println(deSerializeObject("serializationVer1.ser"));

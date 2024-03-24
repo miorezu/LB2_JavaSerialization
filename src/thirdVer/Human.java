@@ -1,4 +1,5 @@
-package secondVer;
+package thirdVer;
+
 
 public abstract class Human {
     private String name;
