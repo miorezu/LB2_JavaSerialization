@@ -33,8 +33,8 @@ public class Library implements Serializable {
         this.bookReaders = bookReaders;
     }
 
-    public Library(String nameL, ArrayList<BookStore> bookStores, ArrayList<BookReader> bookReaders) {
-        this.name = nameL;
+    public Library(String name, ArrayList<BookStore> bookStores, ArrayList<BookReader> bookReaders) {
+        this.name = name;
         this.bookStores = bookStores;
         this.bookReaders = bookReaders;
     }

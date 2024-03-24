@@ -1,12 +1,10 @@
-package firstVer;
+package secondVer;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Book implements Serializable {
-    private static final long serialVersionUID = 1L;
+public class Book {
     private String title;
-    private ArrayList<Author> authors;
+    private transient ArrayList<Author> authors;
     private int year;
     private int publicationNumber;
 
